@@ -1,0 +1,3 @@
+{knit "header"}
+<p>Lorem ipsum dolor sit amet!</p>
+{knit "footer"}

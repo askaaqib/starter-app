@@ -35,4 +35,7 @@ server {
     location ~ /\.ht {
         deny all;
     }
+
+    error_log /home/USER/starter-app/tmp/log/frontend_error.log;
+    access_log /home/USER/starter-app/tmp/log/frontend_access.log;
 }

@@ -1,6 +1,6 @@
 #!/bin/bash
 PHP=`which php`
-BIN=${PWD}__bin.php
+BIN=${PWD}/__bin.php
 
 old="${IFS}"
 IFS=";"

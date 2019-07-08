@@ -33,6 +33,10 @@
 
 `chmod +x console`
 
+* Run composer installation
+
+`composer install`
+
 * Confirm all prerequisites from CLI: 
 
 `./console check_requirements`

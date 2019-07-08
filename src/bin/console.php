@@ -21,5 +21,6 @@ class Console extends AppScript
         $this->print("Following scripts are available to run:");
         $this->print("┬ {cyan}{b}prng_cipher_key{/} {grey}256{/} ── Generates a cryptographically secure entropy");
         $this->print("├ {cyan}{b}deploy_db{/} ── Runs DB migrations");
+        $this->print("└ {cyan}{b}check_requirements{/} ── Checks for all prerequisites");
     }
 }

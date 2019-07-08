@@ -6,20 +6,19 @@ server {
     return 444;
 }
 
+# Default server block
 server {
-    listen 80;
-    listen [::]:80;
-    listen 443 ssl;
-    listen [::]:443 ssl;
+    listen 7860 ssl;
+    listen [::]:7860 ssl;
 
     ssl_certificate /home/USER/starter-app/etc/ssl/CERTIFICATE.crt;
     ssl_certificate_key /home/USER/starter-app/etc/ssl/CERT_PRIVATE_KEY.key;
 
-    root /home/USER/starter-app/src/www/frontend;
+    root /var/www/html;
     index index.php index.html index.htm;
 
-    server_name DOMAIN.TLD;
-    if ($host != "DOMAIN.TLD") {
+    server_name SERVER.DOMAIN.TLD;
+    if ($host != "SERVER.DOMAIN.TLD") {
         return 403;
     }
 

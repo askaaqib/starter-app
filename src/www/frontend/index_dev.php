@@ -6,7 +6,7 @@ require "../../autoload.php";
 try {
     // AppKernel Bootstrapper
     $bootstrapper = (new \Comely\App\Bootstrapper(dirname(__FILE__, 4)))
-        ->env("frontend")
+        ->env("frontend_dev")
         ->loadCachedConfig(false)// Load cached config
         ->dev(true); // DEVELOPMENT MODE ON
 

@@ -7,7 +7,7 @@ try {
     // AppKernel Bootstrapper
     $bootstrapper = (new \Comely\App\Bootstrapper(dirname(__FILE__, 4)))
         ->env("frontend")
-        ->loadCachedConfig(true)
+        ->loadCachedConfig(false)// Load cached config
         ->dev(true); // DEVELOPMENT MODE ON
 
     // Bootstrap
